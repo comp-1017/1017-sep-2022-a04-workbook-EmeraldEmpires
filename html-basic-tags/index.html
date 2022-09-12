@@ -86,5 +86,40 @@
         <a href="https://www.nait.ca" target="_blank">Go to Nait</a>
 
         <h3>Image tag</h3>
+        <!--an empty (void) tag
+            image tag does not have a closing tag
+            the image tag has no content, however it does have parameters
+        
+            parameter:
+            src="relative site location"
+            alt="printable text if the image is not found at src"
+            [title="tool tip text for the image"]
+            
+            Ablosute addressing is a complete fixed file path
+            that includes drive:/folder/..../folder/filename.extension
+        
+            relative address begins at a specified point
+            for websites it is the "top of the website"
+            reference to the desired filemis done by specifying
+            the appropriote folder path to the desired file
+            NO DRIVE LETTER
+            
+            Movement within a relative address 
+            - if only the file name is given, the location is within the same folder
+            - movement down the file structure is by /foldername
+            - movement up the file structure is by using .. for each folder level to ascend
+            
+            same folder
+            ="filename.ext"
+        
+            lower folder
+            ="nextleveldownfoldername/nextleveldownfoldername/..../filename.ext"
+        
+            from one lower folder to another lower folder on a different branch
+            .. for each level that needs to be ascended
+            ="../../../nextleveldownfoldername/filename.ext"
+            -->
+        <img src="img/photoshop.png" alt="logo photoshop"
+            title="a image of the photoshop logo">
     </body>
 </html>
