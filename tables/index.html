@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>  
-        <title>Basic Html structure</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Jeff McKinley">
-    </head>
-    <body>
-      
-    </body>
+	<head>
+		<title>Tables Demo</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Jeff McKinley" />
+	</head>
+	
+	<body>
+        <h1>Canadian web hosting Services</h1>
+		<p>
+			Looking for the Best Canadian Web Hosting? We’ve reviewed the top Canadian web hosts and below you’ll find coupons and discounts for the Top Canadian Hosting providers. More and more Canadians are looking for their website to be
+			hosted in Canada to benefit from search engine rankings and to ensure their privacy is protected by Canadian laws. If you’re a Canadian business looking for a suitable hosting provider then take a look at our list below of
+			Canadian web hosts.
+		</p>
+
+	    <table border="1">
+			<thead>
+				<tr>
+					<th>Host Name</th>
+					<th>Bandwidth</th>
+					<th>Price</th>
+					<th>Money Back</th>
+					<th>Coupon</th>
+					<th>Rating</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>HostUpon</td>
+					<td>Unlimited</td>
+					<td>$3.68/mo</td>
+					<td>30 days</td>
+					<td>15% off</td>
+					<td>5</td>
+				</tr>
+
+				<tr>
+					<td>BlueHost</td>
+					<td>Unlimited</td>
+					<td>$6.99/mo</td>
+					<td>anytime</td>
+					<td>3.95/mo*</td>
+					<td>3</td>
+				</tr>
+
+				<tr>
+					<td>FatCow</td>
+					<td>Unlimited</td>
+					<td>$3.15/mo</td>
+					<td>30 days</td>
+					<td>50%</td>
+					<td>3</td>
+				</tr>
+
+				<tr>
+					<td>HostGator</td>
+					<td>Unlimited</td>
+					<td>$3.71/mo</td>
+					<td>45 days</td>
+					<td>20%</td>
+					<td>4</td>
+				</tr>
+
+				<tr>
+					<td>JustHost</td>
+					<td>Unlimited</td>
+					<td>$6.95</td>
+					<td>anytime</td>
+					<td>3.35/mo*</td>
+					<td>5</td>
+				</tr>
+
+				
+			</tbody>
+            <tfoot>
+                <tr>
+					<td colspan="6">* limited to 3 months of service</td>
+				</tr>
+            </tfoot>
+		</table>
+
+		<!--the head will indicate a line of column headers
+            the cell tag for this line will be <th>
+            the contents of this line will be bolded by default
+        
+            optionally: one can have their head titles on the row
+            here the developer uses the first collumn (general) as 
+            the titles for the data
+            if you re designing your table in this function then
+            a head area is not needed and the first cell on your body row 
+            will be a <th> cell
+                
+            
+            the t body contains the data for the table
+            each row represents a single row of table data
+            think of a grid system (tabular)
+            the text will not have any styling by default
+            
+            see above for using <th> cell if you wish for your 
+            heading to appear on the row instead of the collumn
+
+            <td> cells are grouped under a set of <tr> set of tags
+            <tr> is a row
+            <td> is a cell
+
+            the tfoot area is generally for totals, special messages, comments
+
+            data cells <td> can be merged
+            a set of merged <tf> has a parameter call colspan="" where
+            "" is the number of data cells to merge into one
+            a table row should not have a set of merged cells greater that the
+            the number of coolumns on the table 
+
+            the Border="1" will add a default border around the table and each cell
+        -->
+	</body>
 </html>
