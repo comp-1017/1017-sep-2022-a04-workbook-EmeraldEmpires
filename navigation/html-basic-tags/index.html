@@ -17,6 +17,17 @@
         <meta charset="utf-8">
         <meta name="author" content="Jeff McKinley">
     </head>
+    <header>
+        <h1>Basic Html Tags</h1>
+        <nav>
+            <h2>Nav tag titles are optional</h2>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../semantic-tags.html">Semantics</a></li>
+                    <li><a href="#">Html Basics</a></li>
+                </ul>
+        </nav>
+    </header>
     <body>
         <!--
             items in this area are intended for display (content) on the web page
@@ -25,8 +36,9 @@
 
             paragraph tag: p - this tag indicates the content to be a paragraph
         -->
-
-        <h1>Basic Html Tags</h1>
+       
+        <main>
+            <section>
         <h3>Paragraph Tag</h3>
         <p>This page demonstrates the basic structure of an html web page. The head area has the
              the browser title tab specifyied as well as the charset defined. The body is demonsrtating
@@ -48,6 +60,8 @@
         create an unordered list (bulleted) using <ul>
         items in the list are indicated using the line item <li>
         -->
+        <section>
+            <h2>Lists</h2>
         <ol>
             <li> Add extension Live Server for Go Live execution from VSC</li>
             <li>Open extensions using 5 icon on left by menu</li>
@@ -68,7 +82,8 @@
             <li>default display is a bulleted list</li>
             <li>we will see later ho to move these bullets using css styling</li>
         </ul>
-
+    </section>
+    <section>
         <h3>Anchor tag (a.k.a linking to another page)</h3>
         <!-- blocked paired
             This is an anchor tag and is incorrectly often referred to aa the link tag
@@ -84,8 +99,9 @@
             _blank: will open a new browser tab
         -->
         <a href="https://www.nait.ca" target="_blank">Go to Nait</a>
-
-        <h3>Image tag</h3>
+    </section>
+    <section>
+        <h2>Image tag</h2>
         <!--an empty (void) tag
             image tag does not have a closing tag
             the image tag has no content, however it does have parameters
@@ -120,14 +136,17 @@
             ="../../../nextleveldownfoldername/filename.ext"
             -->
         
-            <img src="img/photoshop.png" alt="logo photoshop"
+            <img src="../img/photoshop.png" alt="logo photoshop"
                 title="a image of the photoshop logo">
 
             <!--
                 combine the anchor tag and the image tag as the anchor tag content
             -->
             <h3>Adobe Site Photo Link</h3>
-         <a href="https://www.adobe.com/ca/" target="_blank"><img src="img/photoshop.png" alt="logo photoshop" width="60" height="60"
+         <a href="https://www.adobe.com/ca/" target="_blank"><img src="../img/photoshop.png" alt="logo photoshop" width="60" height="60"
             title="a image of the photoshop logo"></a> 
+        </section>
+        </section>
+        </main>
     </body>
 </html>
