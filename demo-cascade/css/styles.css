@@ -1,0 +1,82 @@
+footer
+{
+    background-color: #333333;
+    color: white;
+}
+footer,
+footer a 
+{
+    color: white;
+}
+/* make a specific class with your css rule
+
+.nav-background {
+    bckground color: #dddddd;
+}
+*/
+
+/* use dependency selectors
+you use a drill down approach to isolating the html you wish to apply your rules
+
+example
+    within the nav area, the url is to get the following rules
+    */
+nav ul 
+{
+        background-color: #dddddd;
+    }
+nav ul li 
+{
+    border-bottom: 1px solid #333;
+}
+nav a 
+{
+    color: black;
+}
+nav ul li a 
+{
+    color: #333;
+    text-decoration: none;
+}
+/* to remove the underline of an anchor tag: text-decoration: none;
+change the text colr of the anchor tagto #333
+apply only to the navigational menu
+*/
+
+/* classes
+
+types: user (targeted) class
+Psuedo class, these are attached to elements
+
+anchor tag has several pseudo classes
+NOTE! the order in which you code your psuedo classes for the anchor is EXTREMELY IMPORTANT to get to work correctly
+
+a:link unused link
+a:hover used when your cursor hovers over the anchor tag link
+a:visited used when the anchor tag link has been clicked on previously, when it turns purple
+a:active used when you are actually clicking the anchor tag link
+*/
+
+nav ul li a:hover 
+{
+    color: blue;
+    font-weight: bold;
+    font-size: larger;
+}
+nav ul li a:active 
+{
+    color: red;
+    /*font-weight: bold;
+    font-size: larger;*/
+}
+.bulletremoval {
+    list-style: none;
+    padding-left: 0;
+}
+/* targeted class
+   element.classname
+*/
+nav ul.bulletremoval {
+    list-style-type: none;
+    padding: 10px;
+}
