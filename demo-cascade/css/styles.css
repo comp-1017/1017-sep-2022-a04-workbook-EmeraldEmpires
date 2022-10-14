@@ -15,8 +15,8 @@ footer a
 }
 */
 
-/* use dependency selectors
-you use a drill down approach to isolating the html you wish to apply your rules
+/* use decendant selectors
+you use a DRILL DOWN approach to isolating the html you wish to apply your rules
 
 example
     within the nav area, the url is to get the following rules
@@ -29,6 +29,20 @@ nav ul li
 {
     border-bottom: 1px solid #333;
 }
+
+/* child selectors
+
+this is an element selector within another element that is not necessarily directly below the 
+parent element selector.
+
+upper html element (parent)
+within the upper parent soem html element
+*/
+
+main p{
+    font-style: italic;
+}
+
 nav a 
 {
     color: black;
@@ -44,6 +58,14 @@ apply only to the navigational menu
 */
 
 /* classes
+
+syntax for naming is a .user/name{rules}
+you are NOT using element names
+user name must be meaningful
+clases can be attached to any element
+classes are independant of an element
+on html page to use:    class="user-name [user-name]"
+
 
 types: user (targeted) class
 Psuedo class, these are attached to elements
@@ -80,3 +102,11 @@ nav ul.bulletremoval {
     list-style-type: none;
     padding: 10px;
 }
+
+/* id selector
+
+similar to a class selector BUt is supposed to be used only once on a page
+where as a class may be used multiple times
+syntax #user-name{rules}
+on the html page:     id="user-name"
+*/
