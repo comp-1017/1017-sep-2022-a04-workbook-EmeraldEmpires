@@ -1,0 +1,86 @@
+/***********************************************************
+
+margin: The outer most part of the box.
+        Represents seperation BETWEEN boxes.
+        Horizontal margins are added together.
+        Vertical margins are COLLAPSED, if the vertical margins are positive 
+        then the larger of the two margins are used.
+
+
+Margin can be coded in various styles.
+    Long hand: margin-top: size; margin-right: size; margin-bottom: size; margin-left: size;
+    Equal opposite sides: margin: tb rl;
+    Short hand unequal: margin t r b l;
+    Short hand equal: margin: size; 
+****************************************************************/
+
+.margin-section{
+    margin: 24px 12px;
+    /*margin: 24px 12px 24px 12px;*/
+}
+
+/***********************************************************
+
+Border: The second part of the box.
+        Represents the outer displyable edge of the box.
+
+border can be coded in various styles.
+    Long hand: border-width: size; border-style: style; border-color: #111;
+    Equal opposite sides: border: tb rl;
+    Short hand unequal: border: size style color;
+
+****************************************************************/
+
+.border-section{
+    /*border-width: 3px;
+    border-style: solid;
+    border-color: black;*/
+    border: 3px solid black;
+}
+
+/***********************************************************
+
+padding: The inside part of the box.
+        Represents seperation BETWEEN border and content.
+        
+
+
+padding can be coded in various styles.
+    Long hand: padding-top: size; padding-right: size; padding-bottom: size; padding-left: size;
+    Equal opposite sides: padding: tb rl;
+    Short hand unequal: padding: t r b l;
+    Short hand equal: padding: size; 
+****************************************************************/
+
+.padding-section{
+    padding: 24px;
+}
+
+/****************************************************************
+
+content: by default this is the display area of your element content.
+        the size of the content area is dependent on whether there are margin, border and/or padding specified
+        for the element.
+
+calculation: page width = LM+LB+LP+Content+RP+RB+RM
+
+samples:    960 = 0+0+0+content+0+0+0
+            960  -(0+0+0+0+0+0)= content
+            960 = content
+
+            960 = 24+3+12+content+12+3+24
+            960 - (24+3+12+12+3+24)= content 
+            960 - 78 = content 
+            960 = 882
+            882 = content
+
+
+you can specify your content area using width: size;
+
+***************************************************************/
+.width-section{
+    margin: 24px;
+    padding: 12px;
+    border: 3px solid red;
+    width: 700px;
+}
