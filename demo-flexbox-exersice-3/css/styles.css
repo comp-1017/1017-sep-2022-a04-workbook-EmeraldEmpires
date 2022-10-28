@@ -65,22 +65,26 @@ box model equation
 main{
     background-color: lightgray;
     display: flex;
+    border: 2px solid black;
 }
 
 main > div{
     height: 300px;
-    width: 280px;
-    margin: 30px 0 30px 30px;
+    width: 301px;
+    margin: 10px 0 10px 10px;
 }
 
 .red-paint{
     background-color: red;
+    border: 2px solid black;
 }
 
 .blue-paint{
     background-color: blue;
+    border: 2px solid black;
 }
 
 .yellow-paint{
     background-color: yellow;
+    border: 2px solid black;
 }
