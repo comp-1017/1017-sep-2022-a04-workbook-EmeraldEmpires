@@ -34,6 +34,10 @@ section > p{
 	color: #7f8c8c;
 }
 
+/*
+convert point to pixel
+pt * (4/3) or pt * 1.33333
+*/
 h2{
 	font-size: 60px;
 }
