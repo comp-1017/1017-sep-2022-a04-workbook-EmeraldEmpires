@@ -54,6 +54,9 @@ section footer img{
 	vertical-align: middle;
 }
 
+/*
+element1 element 2 syntax means any element2 regardless of nesting is affected
+*/
 section footer{
 	margin-top: 24px;
 }
