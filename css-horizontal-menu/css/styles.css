@@ -2,6 +2,8 @@ body {
 	background-color: white;
 	font-size: 100%;
 	line-height: 1.5;
+	color: #f1f7f6;
+	font-family: 'Raleway', sans-serif;
 }
  
 .container {
@@ -11,4 +13,81 @@ body {
 
 .visuallyhidden {
 	display: none;
+}
+header{
+	background-color: #028568;
+	display: flex;
+}
+
+header .logo{
+	margin: 10px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #f1f7f6;
+}
+
+nav li{
+	font-size: 18px;
+	line-height: 75px;
+	margin-right: 30px;
+}
+
+nav ul{
+	display: flex;
+}
+
+header nav{
+	margin-left: 210px;
+}
+
+header a:hover{
+	border-bottom: 2px solid #abddd5;
+}
+
+.banner{
+	font-size: 18px;
+	background-color: #000;
+	background-image: url(../img/island-bg.jpg);
+	display: flex;
+}
+
+.banner h2{
+	margin-bottom: 36px;
+	font-family: 'Alegreya', serif;
+	font-size: 36px;
+}
+
+.banner .left-column{
+	width: 414px;
+	padding: 82px 82px 0 82px;
+	text-align: center;
+}
+.banner .bar{
+	width: 415px;
+	height: 8px;
+	margin-bottom: 36px;
+	background-color: #abddd5;
+}
+
+.banner .right-column{
+	width: 216px;
+	padding: 85px 83px 0 83px;
+	background-color: rgba(171, 221, 213, 0.8);
+}
+
+.banner .right-column h2{
+	line-height: 44px;
+}
+
+.banner a{
+	padding: 9px 38px;
+	margin-bottom: 65px;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #fff;
+	color: #028568;
+	border-radius: 8px;
 }
